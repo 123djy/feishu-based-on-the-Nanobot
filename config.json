@@ -1,8 +1,8 @@
 {
   "agents": {
     "defaults": {
-      "workspace": "C:\\Users\\10702\\.nanobot\\workspace",
-      "model": "deepseek-chat",
+      "workspace": "自己的工作空间",
+      "model": "",
       "provider": "auto",
       "maxTokens": 8192,
       "temperature": 0.1
@@ -27,7 +27,7 @@
   "providers": {
     "deepseek": {
       "apiKey": "${DEEPSEEK_API_KEY}",
-      "apiBase": "https://api.deepseek.com",
+      "apiBase": "",
       "apiType": "auto"
     }
   },
@@ -44,7 +44,7 @@
       "ticket_server": {
         "command": "python",
         "args": ["mcp_servers/ticket_server.py"],
-        "cwd": "C:\\Users\\10702\\.nanobot\\workspace",
+        "cwd": "",
         "description": "工单管理系统",
         "env": {
           "PYTHONIOENCODING": "utf-8"
