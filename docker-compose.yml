@@ -1,0 +1,9 @@
+services:
+  cs-bot:
+    build: .
+    container_name: cs-bot
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
