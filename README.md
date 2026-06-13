@@ -144,7 +144,7 @@ Agent 内部工作流（由 AGENTS.md 定义）：
 ## 快速开始
 
 ### 前置条件
-
+- 安装nanobot
 - Docker & Docker Compose
 - DeepSeek API Key
 - 飞书开放平台应用（App ID + App Secret）
