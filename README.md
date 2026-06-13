@@ -189,7 +189,7 @@ python bench.py
 | 工单存储 | SQLite |
 | MCP 协议 | JSON-RPC 2.0 over stdio |
 | 部署 | Docker + Docker Compose |
-| 消息渠道 | 飞书（Lark）开放平台 |
+| 消息渠道 | 飞书开放平台 |
 
 ---
 
