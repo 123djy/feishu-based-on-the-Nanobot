@@ -1,7 +1,8 @@
 # 🤖 飞书智能客服 Bot
 
 基于 [Nanobot AI](https://pypi.org/project/nanobot-ai/) 学习learn_nanobot灵感, 构建飞书智能客服系统，具备意图识别、FAQ 知识库检索、工单管理等功能。
-![Uploading image.png…]()
+<img width="857" height="644" alt="image" src="https://github.com/user-attachments/assets/e365ff9b-d987-46e2-81e6-e77157d9d67f" />
+
 
 ---
 
