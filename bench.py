@@ -2,7 +2,7 @@
 """bench.py — 线上系统评测"""
 import json, time, urllib.request, threading
 
-URL = "http://39.96.12.163:8080/webhook/feishu"
+URL = ""
 
 def make_payload(text, msg_id):
     return json.dumps({
