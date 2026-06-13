@@ -1,0 +1,56 @@
+{
+  "agents": {
+    "defaults": {
+      "workspace": "C:\\Users\\10702\\.nanobot\\workspace",
+      "model": "deepseek-chat",
+      "provider": "auto",
+      "maxTokens": 8192,
+      "temperature": 0.1
+    }
+  },
+
+  "channels": {
+    "feishu": {
+      "enabled": false,
+      "appId": "${FEISHU_APP_ID}",
+      "appSecret": "${FEISHU_APP_SECRET}",
+      "encryptKey": "",
+      "allowFrom": [],
+      "groupPolicy": "mention",
+      "replyToMessage": false,
+      "streaming": true,
+      "domain": "feishu",
+      "topicIsolation": true
+    }
+  },
+
+  "providers": {
+    "deepseek": {
+      "apiKey": "${DEEPSEEK_API_KEY}",
+      "apiBase": "https://api.deepseek.com",
+      "apiType": "auto"
+    }
+  },
+
+  "tools": {
+    "web": {
+      "enable": true
+    },
+    "exec": {
+      "enable": true,
+      "timeout": 60
+    },
+    "mcpServers": {
+      "ticket_server": {
+        "command": "python",
+        "args": ["mcp_servers/ticket_server.py"],
+        "cwd": "C:\\Users\\10702\\.nanobot\\workspace",
+        "description": "工单管理系统",
+        "env": {
+          "PYTHONIOENCODING": "utf-8"
+        }
+      }
+    }
+  }
+}
+
