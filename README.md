@@ -81,9 +81,7 @@ Flask 服务监听 `http://0.0.0.0:8080`：
 
 核心特性：
 - **消息去重**：内存 Set 缓存 `message_id`，防止重复处理
-- **URL 验证**：飞书开放平台首次配置时自动应答 `url_verification` 挑战
 - **删除消息过滤**：检测到 `"此消息已删除"` 等提示自动跳过
-- **耗时统计**：每个环节（意图识别/nanobot/飞书回复）都有毫秒级计时日志
 
 ### 2. 意图识别（intent_recognizer.py）
 
@@ -102,8 +100,6 @@ Layer 2: DeepSeek LLM 语义分类
 Layer 3: 置信度门控
   └─ 反问澄清文案返回，不走 AI
 ```
-
-关键词规则覆盖 6 类意图，按优先级匹配（billing → ticket → complaint → chitchat），支持 `re.search` 正则。
 
 ### 3. Agent 处理
 
